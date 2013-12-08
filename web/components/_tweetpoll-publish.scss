@@ -1,9 +1,9 @@
 /** Publish Tweet Poll **/
-div.publishContent {
+.publishContent {
     margin: 35px 35px 35px 0px;
 }
 
-div.publishWrapper {
+.publishWrapper {
     float: left;
     width: 460px;
     margin-right: 23px;
@@ -14,49 +14,43 @@ div.publishWrapper {
     border-radius: 10px;
 }
 
-div.publishWrapper .rich-table {
+.publishWrapper .rich-table {
     background-color: #EEEEEE;
     width: 100%;
 }
 
-div.publishWrapper table {
+.publishWrapper table {
     background-color: #EEEEEE;
 }
 
-/*
-div.publishWrapper tr:hover{
-    padding: 10px;
-    background-color: #CACACA;
-}
-*/
-div.publishWrapper td {
+.publishWrapper td {
     padding: 10px;
 }
 
-div.publishWrapper  div.socialItem {
+.publishWrapper  .socialItem {
     font-size: 1.1em;
     color: #777777;
     font-weight: bold;
 }
 
-div.publishWrapper .rich-table-row {
+.publishWrapper .rich-table-row {
     padding: 10px;
     background-color: #EEEEEE;
     margin: 2px;
 }
 
-div.publishWrapper .rich-table-firstrow {
+.publishWrapper .rich-table-firstrow {
 
 }
 
-div.publishWrapper div.publishTwitterTitle {
+.publishWrapper .publishTwitterTitle {
     padding: 10px;
     font-size: 12px;
     color: #FFF;
     font-weight: bold;
 }
 
-div.publishWrapper div.itemPublish {
+.publishWrapper .itemPublish {
     padding: 5px 4px 0px;
     background-color: #1277C9;
     color: #FFF;
@@ -65,14 +59,14 @@ div.publishWrapper div.itemPublish {
     font-weight: bold;
 }
 
-div.publishWrapper div.itemPublish .check {
+.publishWrapper .itemPublish .check {
     display: inline-block;
     width: 50px;
     padding-top: 3px;
     float: left;
 }
 
-div.publishWrapper div.itemPublish .account {
+.publishWrapper .itemPublish .account {
     display: inline-block;
     width: 200px;
     background-repeat: no-repeat;
@@ -83,7 +77,7 @@ div.publishWrapper div.itemPublish .account {
     padding-top: 5px;
 }
 
-div.publishOptions {
+.publishOptions {
     background-color: #BCBCBC;
     padding: 19px;
     width: 54%;
@@ -92,149 +86,172 @@ div.publishOptions {
     border-radius: 10px;
 }
 
-div.publishOptions .paddingLeft {
+.publishOptions .paddingLeft {
     padding: 10px;
 }
 
-div.publishOptions .paddingRigth {
+.publishOptions .paddingRigth {
     padding: 10px;
 }
 
-div.optionTitle {
+.optionTitle {
     padding: 7px;
     font-size: 12px;
     color: #FFF;
     font-weight: bold;
 }
 
-div.publishOptions table {
+.publishOptions table {
     width: 80%;
     background-color: #D7D2D2;
     color: #777777;
 }
 
-div.publishOptions tr {
+.publishOptions tr {
     font-weight: bold;
 }
 
-div.publishOptions tr .label {
+.publishOptions tr .label {
     padding-left: 10px;
 }
 
-div.publishOptions div.publishTableOptionWrapper {
+.publishOptions .publishTableOptionWrapper {
 
 }
 
-div.publishOptions div.publishTableOptionWrapper .itemOption {
+.publishOptions .publishTableOptionWrapper .itemOption {
     padding: 6px;
 }
 
-div.publishOptions div.publishTableOptionWrapper .itemOption .itemLeft {
+.publishOptions .publishTableOptionWrapper .itemOption .itemLeft {
     float: left;
     margin-right: 20px;
 }
 
-div.publishOptions div.publishTableOptionWrapper .itemOption .label {
+.publishOptions .publishTableOptionWrapper .itemOption .label {
     font-size: 1.1em;
     color: #777777;
     font-weight: bold;
 }
 
-div.publishOptions div.publishTableOptionWrapper  .extra {
+.publishOptions .publishTableOptionWrapper  .extra {
     padding-left: 10px;
     background-color: #EEEEEE;
 }
 
-div.publishButtons {
+.publishButtons {
     float: right;
     margin-right: 15px;
     margin-top: 30px;
 }
 
 /** tweetPollPublishDialog **/
-div.tweetPollPublishDialog {
-    padding: 10px;
+.tweetPollPublishDialog {
+
+         padding: 10px;
+
+         .info {
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 20px;
+            margin: 10px;
+            padding: 10px;
+         }
+
+         .items {
+            max-height: 200px;
+            overflow: auto;
+            padding: 5px;
+
+            .item {
+                border-bottom: 1px solid #E1DFDF;
+                clear: both;
+                font-weight: bold;
+                min-height: 36px;
+                padding: 3px;
+                overflow: auto;
+
+                .failure-options {
+
+                }
+
+                .scheduled-options {
+                    padding: 5px;
+                    margin-top: 5px;
+                    border : 1px solid #D8D8D8;
+                    background-color: #F7F5F5;
+                    > div {
+                        padding: 5px;
+                    }
+                }
+
+                .image {
+                    float: left;
+                    margin-right: 5px;
+                    padding: 3px;
+                    width: 20px;
+                }
+
+                .detail {
+                    float: left;
+                    padding: 4px;
+                    width: 80%;
+                }
+
+                .icon {
+                    float: right;
+                    padding: 5px;
+                    width: 50px;
+                }
+
+                .detail {
+                    padding: 4px;
+                }
+
+                .detail .success-message {
+                    padding: 3px;
+                    max-width: 50%;
+                    padding: 4px;
+                    color: #26A526;
+                    @include border-radius(2px);
+                    margin-right: 10px;
+                    float: left;
+                }
+
+                 .detail .success-url {
+                  color: #444444;
+                  font-weight: normal;
+                  line-height: 25px;
+                  padding: 4px;
+                  text-decoration: underline;
+                }
+
+                 .detail .success-url a:hover {
+                    text-decoration: underline;
+                }
+
+                 .detail .failure-message {
+                    background-color: #EB2C2C;
+                    @include border-radius(2px);
+                    color: #FFFFFF;
+                    margin-right: 10px;
+                    max-width: 50%;
+                    padding: 4px;
+                    float: left;
+                }
+            }
+        }
 }
 
-div.tweetPollPublishDialog div.info {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 20px;
-  margin: 10px;
-  padding: 10px;
-}
 
-div.tweetPollPublishDialog div.items {
-    max-height: 200px;
-    overflow: auto;
-    padding: 5px;
-}
 
-div.tweetPollPublishDialog div.items div.item {
-    border-bottom: 1px solid #E1DFDF;
-    clear: both;
-    font-weight: bold;
-    min-height: 36px;
-    padding: 3px;
-    overflow: auto;
-}
 
-div.tweetPollPublishDialog div.items div.item div.image {
-    float: left;
-    margin-right: 5px;
-    padding: 3px;
-    width: 20px;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail {
-    float: left;
-    padding: 4px;
-    width: 80%;
-}
 
-div.tweetPollPublishDialog div.items div.item div.icon {
-    float: right;
-    padding: 5px;
-    width: 50px;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail {
-    padding: 4px;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail .success-message
-    {
-    padding: 3px;
-    max-width: 50%;
-    padding: 4px;
-    color: #26A526;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    margin-right: 10px;
-    float: left;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail .success-url {
-  color: #444444;
-  font-weight: normal;
-  line-height: 25px;
-  padding: 4px;
-  text-decoration: underline;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail .success-url a:hover
-    {
-    text-decoration: underline;
-}
 
-div.tweetPollPublishDialog div.items div.item div.detail .failure-message
-    {
-    background-color: #EB2C2C;
-    border-radius: 2px 2px 2px 2px;
-    color: #FFFFFF;
-    margin-right: 10px;
-    max-width: 50%;
-    padding: 4px;
-    float: left;
-}
+
+
