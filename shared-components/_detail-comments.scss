@@ -1,4 +1,32 @@
- .comments {
+.web-tweetpoll-comments {
+    .picture {
+       img {
+         width: 90px;
+         height: 90px;
+       }
+    }
+}
+
+.add-comment {
+
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+    .options {
+        margin-right: 40px;
+        float: right;
+        margin-top: 10px;
+    }
+
+    .picture {
+        text-align: center;
+        width: 90px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
+
+.comments {
 
     overflow: auto;
     @include background-default-wrapper;
@@ -19,8 +47,7 @@
         }
     }
 
-
-     .comment-wrapper-no-content {
+    .comment-wrapper-no-content {
         clear: both;
         color: #A09F9D;
         font-size: 18px;

@@ -599,3 +599,13 @@ input:focus {
   white-space: nowrap;
   resize: none;
 }
+
+.picture {
+    float: left;
+    img {
+      border: 1px solid $green_light;
+      @include border-radius(140px);
+      height: 110px;
+      width: 110px;
+    }
+}

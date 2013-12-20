@@ -19,16 +19,6 @@
             top: 40px;
             position: absolute;
           }
-
-          .picture {
-              float: left;
-
-              img {
-                @include border-radius(140px);
-                height: 110px;
-                width: 110px;
-              }
-          }
       }
 
       .enme-box {
