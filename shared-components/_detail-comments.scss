@@ -63,16 +63,15 @@
 
      .comment-wrapper {
 
-            .comment .comment-data {
+          .comment .comment-data {
             float: left;
             height: auto;
             line-height: normal;
             padding: 10px;
-            width: auto;
-            // border: 1px solid #EAEAEA;
+            width: 95%;
           }
 
-            .comment .comment-data:hover{
+          .comment .comment-data:hover{
           	 box-shadow: 0 1px 2px #CCC;
           	 background-color: #F8F8F8;
           	 border: 1px solid #EFEFEF;
@@ -80,22 +79,22 @@
           	 cursor: pointer;
           }
 
-            .comment .comment-data .comment-info-data {
+          .comment .comment-data .comment-info-data {
             font-size: 0.9em;
             font-weight: bold;
             padding: 1px;
           }
 
-            .comment .comment-data .comment-info-data .date{
+          .comment .comment-data .comment-info-data .date{
               margin-left: 10px;
           }
 
-            .comment .comment-data .comment-info-data .date a {
+          .comment .comment-data .comment-info-data .date a {
             color: black;
             text-decoration: none;
           }
 
-            .comment a {
+          .comment a {
             color: #070691;
             font-weight: 500;
           }
