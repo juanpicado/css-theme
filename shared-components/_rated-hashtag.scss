@@ -5,42 +5,23 @@
     margin: 0 10px;
 }
 
-.web-stats table {
-
-}
-
-.web-stats table tr {
-    line-height: 20px;
-}
-
-.web-stats table td {
-    padding: 2px;
-}
-
-.web-stats table tr td:first-child {
-    font-weight: bold;
-    padding-right: 20px;
-}
-
 /** .web-rated-position */
 .web-rated-position {
     margin: 0;
     padding: 0;
 }
-.web-rated-position div.position-row {
+.web-rated-position .position-row {
   color: #CBCAC9;
   padding: 5px;
   width: auto;
 }
 
-.web-rated-position div.highlight {
-  border-radius: 4px 4px 4px 4px;
+.web-rated-position .highlight {
   color: #333333 !important;
   margin: 0;
-  text-shadow: 1px 1px 1px #CACCCF;
 }
 
-.web-rated-position div.highlight span.position {
+.web-rated-position .highlight .position {
     color: #787878;
 }
 
@@ -53,11 +34,9 @@
 .web-rated-position .position-row .position-label {
   float: left;
   margin-top: 1px;
-  max-width: 125px;
-  min-width: 125px;
+  width: 100px;
   padding-left: 5px;
   text-align: left;
-  font-size: 13px;
 }
 
 .web-rated-position .position-row .position-label a:link,
@@ -68,12 +47,11 @@
     text-decoration: none;
 }
 
-.web-rated-position span.position {
+.web-rated-position .position {
     color: #DEDEDE;
-    font-size: 11px;
     width: 50px;
 }
-.web-rated-position span.graph {
+.web-rated-position .graph {
     padding-left: 15px;
     text-align: center;
 }
@@ -95,11 +73,4 @@
     display: inline-block;
     height: 10px;
     min-width: 20px;
-}
-
-.ellipsis {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
 }

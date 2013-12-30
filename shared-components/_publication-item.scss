@@ -19,7 +19,7 @@
     border-bottom: 1px dotted #EEEBEB;
     clear: both;
     overflow: auto;
-    padding: 15px;
+    padding: 15px 0;
 }
 
 .web-pup-wrapper .web-pup-item:last-child {
@@ -38,7 +38,6 @@
 
 .web-pup-wrapper .web-pup-item .web-pup-item-detail-wrapper .web-pup-item-content {
     float: left;
-    margin-left: 16px;
     min-height: 48px;
 }
 
@@ -47,8 +46,7 @@
     min-height: 48px;
 }
 
-.web-pup-wrapper .web-pup-item .web-pup-item-detail-wrapper  .web-pup-item-bottom
-    {
+.web-pup-wrapper .web-pup-item .web-pup-item-detail-wrapper  .web-pup-item-bottom {
     font-size: 10px;
     color: #EFEFEF;
     margin-top: 2px;

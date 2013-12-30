@@ -1,3 +1,5 @@
+//review SASS
+
 #web-main-public-line .container {
 	width: 940px;
 }
@@ -24,6 +26,9 @@
 
 #web-main-public-line .web-left-wrapper .section .web-aside-section {
   min-height: 130px;
+  .web-list-more .titleNext {
+      color: $white;
+  }
 }
 
 #web-main-public-line .web-left-wrapper .section .cloudItems {
@@ -45,7 +50,7 @@
   @extend .home-header-color;
   border-bottom: 1px solid #717171;
   box-shadow: 0 0 0 1px #555555 inset;
-  color: #FFFFFF;
+  color: $white;
   padding: 10px 0 10px 10px;
   width: auto;
 }

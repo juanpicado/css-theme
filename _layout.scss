@@ -4,7 +4,6 @@ html,body {
     font-size: 12px;
 }
 
-
 .main_header_colors {
   background: $black;
   @include background-image(linear-gradient(color-stops($black  42%, $black_hight 100%)));
@@ -173,22 +172,8 @@ and (orientation : portrait) {
 
 /* Desktops and laptops  */
     body {
-        height: 100%;
-        word-wrap: break-word;
         margin: 0;
-        padding: 0;
-        //background-color: #cfcfcf;
-    }
-
-    /** header **/
-    header#header {
-      @extend .main_header_colors;
-      // -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.8);
-      // -moz-box-shadow: 0 2px 2px -2 px rgba(0, 0, 0, 0.8);
-      @include box-shadow(rgba(0, 0, 0, 0.8) 2px 2px -2px);
-       height: 20px;
-       position: relative;
-       z-index: 500;
+        padding-top: 23px;
     }
 
     .header {
@@ -207,10 +192,6 @@ and (orientation : portrait) {
         width: 125px;
     }
 
-    #header div.search {
-        width: 100px;
-    }
-
     .heading-title {
         width: 100%;
         margin-top: 40px;
@@ -227,8 +208,7 @@ and (orientation : portrait) {
         padding: 0 8px;
     }
 
-    div.web-header {
-      font-size: 13px;
+    .web-header {
       font-weight: normal;
       height: 40px;
     }
@@ -323,30 +303,6 @@ and (orientation : portrait) {
 
     #content-container #enme-content a:hover {
         text-decoration: underline;
-    }
-
-    //http://compass-style.org/examples/compass/layout/sticky-footer/
-
-    @include sticky-footer($footer_height, "#mainWrapper", "#footer", "#footer-f");
-
-    #footer-f {
-      @extend .text-white;
-      @extend .main_header_colors;
-      a:link, a:visited, a {
-        @extend .text-white;
-        @extend .bold;
-        &:hover {  text-decoration: underline; }
-        text-decoration: none;
-      }
-
-      .footer {
-            height: 20px;
-            font-size: 10px;
-            line-height: 20px;
-            padding: 10px;
-            text-align: right;
-            white-space: nowrap;
-      }   
     }
 
     .text-color {
