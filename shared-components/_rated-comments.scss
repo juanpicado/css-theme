@@ -29,13 +29,10 @@
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-detail {
-  color: #FFFEFE;
-  font-size: 12px;
+  color: $white;
 }
 
-.web-rated-comments .web-rated-comment-item .web-rated-comment-item-detail .strong
-    {
-    font-weight: bold;
+.web-rated-comments .web-rated-comment-item .web-rated-comment-item-detail .strong {
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub {
@@ -45,7 +42,7 @@
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub a {
-    color: white;
+    color: $white;
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub section>span

@@ -6,6 +6,7 @@ body.public-body {
 .enme-auto-center {
   margin: 0 auto;
   max-width: $layout_width;
+  width: $layout_width;
 }
 
 
@@ -292,9 +293,7 @@ div.socialAccountPicker div.account div.icon {
 }
 
 .stats-button .web-graph-sts-btt-tlt {
-  font-size: 14px;
   font-weight: bold;
-  padding-left: 20px;
 }
 
 .stats-button .web-graph-sts-btt-val {

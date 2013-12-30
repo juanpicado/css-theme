@@ -16,10 +16,6 @@
         margin: 0;
       }
 
-      .web-rated-profile-item .web-rated-profile-item-detail a {
-          color: $black_light;
-      }
-
        .web-ht-detail {
         @extend .o-auto;
       }
@@ -33,16 +29,20 @@
         margin-right: 15px;
       }
 
-       .web-ht-detail-wrapper {
+      .web-ht-detail-wrapper {
         width: 75%;
         float:left;
       }
 
-       .web-ht-wrapper-top {
+      .web-ht-wrapper-top {
         border: 0 none !important;
         @include non_borders();
         overflow: hidden;
         margin-top: 2em;
+
+        .web-rated-profile-item-detail h4.enme {
+          color: $black_medium;
+        }
       }
 
        .web-ht-wrapper-mainline {
@@ -89,6 +89,6 @@
 .web-ht-button-wrapper .web-ht-button-item {
     border-bottom: 1px solid #E5E5E5;
     border-left: 1px solid #E5E5E5;
-    min-height: 70px;
+    min-height: 75px;
     color: $gray_normal;
 }

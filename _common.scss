@@ -25,7 +25,7 @@ img {
 
 h4.enme {
   color : $gray_normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
   margin: 0;
@@ -608,4 +608,11 @@ input:focus {
       height: 110px;
       width: 110px;
     }
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
 }
