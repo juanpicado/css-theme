@@ -184,23 +184,23 @@
 
 /** Suggest. **/
 
-div.suggestBox{
+.suggestBox{
     position: absolute;
     border: 1px solid $black;
     background-color: $white;
-}
 
-div.suggestBox .suggesItem{
-    padding: 5px;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
-
-}
-
-div.suggestBox .suggesItem:hover{
-    background-color: #939397;
-    @extend .text-white;
+    //TODO: remove
+    .suggesItem{
+        padding: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    //TODO: remove
+    .suggesItem:hover{
+        background-color: #939397;
+        @extend .text-white;
+    }
 }
 
 div.yesNoWrapper{

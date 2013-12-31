@@ -214,7 +214,6 @@ h4.enme {
 }
 
 .border-main-box {
-    margin-top: 1em;
     background-color: $white;
 }
 
@@ -227,7 +226,6 @@ h4.enme {
 .enme-main-section {
   border: 1px solid #BCBCBC;
   @include border-radius(3px);
-  margin-top: 2em;
   background-color: #F0F0F0;
 }
 
@@ -240,25 +238,6 @@ h4.enme {
     height: 0;
 }
 
-
-// .tag {
-//     border-color: #C9C8C8 #BEBABA #888888;
-//     @include background-image(linear-gradient(color-stops($web_tag_color  20%, $web_tag_high_color 100%)));
-//     @include border-radius(3px);
-//     @extend .unselectable;
-//     border-style: solid;
-//     border-width: 1px;
-//     margin: 2px 2px 2px 0;
-//     padding: 3px 4px;
-//     @extend .white-space;
-//     background: $web_tag_color;
-//     color: white !important;
-//     &:hover{
-//           color: #F7FBFF;
-//           background-color: #3E6D8E;
-//           text-decoration: none;
-//     }
-// }
 
 .col {
   margin-bottom: -99999em;
