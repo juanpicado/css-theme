@@ -35,7 +35,7 @@ h4.enme {
 .enme-rating {
 
     .vote {
-        border-radius: 50px;
+        @include border-radius(50px);
         background-color: $orange_light;
         font-size: 10px;
         padding: 15px;
@@ -520,7 +520,7 @@ input:focus {
 
 .enme-ui-loading-search {
   background-repeat: no-repeat;
-  border-radius: 0 0 4px 4px;
+  @include border-radius(0 0 4px 4px);
   display: inline-block;
   font-weight: bold;
   height: 20px;
