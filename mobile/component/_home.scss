@@ -7,18 +7,19 @@
 
         .nav-home-menu{
 
-            padding: 10px;
             overflow: auto;
             position: relative;
+            width: 100%;            
 
             ul {
                 margin: 0px;
                 font-size: 14px;
 
                 li {
+                    padding: 10px;
                     float: left;
                     list-style: none;
-                    margin-right: 30px;
+                    margin-right: 10px;
                 }
            
             }
