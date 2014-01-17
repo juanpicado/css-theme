@@ -9,124 +9,13 @@ html,body {
   @include background-image(linear-gradient(color-stops($black  42%, $black_hight 100%)));
 }
 
-
 /* Smartphones (portrait and landscape)  */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
     body.mobile{
         margin: 0;
         padding: 0;
-    }
-
-    .mobile a {
-        color : gray;
-        text-decoration: none;
-    }
-
-    .mobile > footer {
-
-    }
-
-    .mobile > footer  .mobile-footer {
-        text-align: left;
-        padding-top: 2px;
-        padding-bottom: 2px;
-        background-color: #585958;
-        color : white;
-        padding: 6px;
-        min-height: 30px;
-        box-shadow: 5px 6px 5px 8px black;
-     }
-
-     .mobile-footer .footer-menu {
-        padding: 10px;
-     }
-
-     .mobile-footer .footer-menu > span {
-        padding: 10px;
-     }
-
-    .mobile-footer .footer-menu span a{
-        font-size: 12px;
-        text-align: center;
-        margin-top: 3px;
-        color: white;
-    }
-
-    .mobile-footer .mobile-footer-version {
-        font-size: 11px;
-        text-align: right;
-        margin-top: 3px;
-        padding: 10px;
-    }
-
-    .mobile-footer .mobile-footer-version  a {
-        color : white !important;
-    }
-
-    .mobile-footer .mobile-footer-version  a > span {
-        color : white;
-    }
-
-    /** header **/
-
-
-    .mobile > header {
-
-    }
-
-   .mobile #mobile-header-wrapper{
-        min-height: 27px;
-        padding: 5px;
-        box-shadow: 1px 2px 6px 0px #9c9393;
-        text-align: center;
-    }
-
-   .mobile #mobile-header-wrapper div.logo {
-        margin: 0 auto;
-    }
-
-    .mobile div.mobile-header-options{
-        width: auto;
-        text-align: right;
-        padding: 0 5px;
-        height: 30px;
-    }
-
-    .mobile .mobile-header-options span{
-        display: inline-block;
-    }
-
-    .mobile .mobile-header-options span.link{
-        padding-left: 5px;
-        padding-right: 5px;
-        margin: 4px 4px 3px 0;
-    }
-
-    .mobile .mobile-header-options span.link a{
-        color: #275296;
-        text-decoration: none;
-        font-size: 110%;
-        font-style: italic;
-        font-weight: bold;
-    }
-
-    .mobile .mobile-header-options span.link a:hover{
-        text-decoration: none;
-    }
-
-    .mobile .mobile-header-options span.search{
-    }
-
-    .mobile .mobile-main {
-        min-height: 300px;
-        background-color: white;
-    }
-
-    .mobile-main-vote {
-        min-height: 350px;
-    }
-
+    }   
 }
 
 /* Smartphones (landscape)  */
