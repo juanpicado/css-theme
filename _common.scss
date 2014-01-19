@@ -595,3 +595,10 @@ input:focus {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
 }
+
+/** agrupa preguntas **/
+.web-generic-detail-answer-wrapper {
+  background-color: #F7F7F7;
+  box-shadow: 3px 1px 3px 0 #CBCBCB inset;
+  min-height: 315px;
+}

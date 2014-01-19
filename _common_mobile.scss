@@ -2,29 +2,18 @@
 // html reset process
 // commons enme css libs
 @import "common";
-// @import "resources";
-// @import "required";
-// @import "input";
-//@import "layout";
 @import "bootstrap/bootstrap_fixed";
+
 @import "mobile/layout";
 @import "mobile/default";
-
 @import "mobile/component/poll_tp_htg_detail";
 
-//panel scss
-// @import "mobile/fonts/ss-standard/ss-standard.scss";
-// @import	"mobile/panel/reset";
-// @import	"mobile/panel/setup";
-// @import	"mobile/panel/general";
-// @import	"mobile/panel/base";
-// @import	"mobile/panel/_header";
-// @import	"mobile/panel/_content";
-// @import	"mobile/panel/_footer";
-// @import	"mobile/panel/_menu";
-// @import	"mobile/panel/_top";
-// @import	"mobile/panel/_bottom";
+@import "mobile/hacks/ff";
+@import "mobile/hacks/opera";
+@import "mobile/hacks/webkit";
+@import "mobile/hacks/ie";
 
 .category_color{
 	@include ctb-gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
 }
+

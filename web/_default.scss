@@ -358,13 +358,6 @@ div.web-default-menu  li.first {
     min-height: 180px;
 }
 
-/** agrupa preguntas **/
-.web-generic-detail-answer-wrapper {
-  background-color: #F7F7F7;
-  box-shadow: 3px 1px 3px 0 #CBCBCB inset;
-  min-height: 315px;
-}
-
 .web-wrapper-detail .web-wrapper-detail-wrapper .web-detail-answer-wrapper {
   @extend .web-generic-detail-answer-wrapper;
 }
