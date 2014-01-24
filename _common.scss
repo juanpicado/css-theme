@@ -10,7 +10,7 @@ a.tag:link, a.tag:visited, a.tag:active {
 }
 
 img {
-    border: 0px;
+    border: 0;
 }
 
 
@@ -21,6 +21,18 @@ img {
 
 .center {
  text-align: center;
+}
+
+.wrap{
+    @include nowrap();
+    @include word-break(break-word);
+}
+
+.txt-df{
+  font-size: $df_font_size;
+  margin: 0;
+  padding: 0;
+  @extend .wrap;
 }
 
 h4.enme {
@@ -422,11 +434,6 @@ a.point {
 
 .t-light {
     font-weight: 100;
-}
-
-.wrap{
-    @include nowrap();
-    @include word-break(break-word);
 }
 
 /** disable focus on webkit **/

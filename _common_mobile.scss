@@ -17,3 +17,7 @@
 	@include ctb-gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
 }
 
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+}
