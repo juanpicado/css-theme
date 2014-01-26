@@ -13,6 +13,7 @@
 @import "mobile/hacks/webkit";
 @import "mobile/hacks/ie";
 
+
 .category_color{
 	@include ctb-gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
 }
@@ -20,4 +21,11 @@
 .cell {
 	display: table-cell;
 	vertical-align: middle;
+}
+
+
+.no-results {
+	font-weight: 100;
+	font-size: 18px;
+	text-align: center;
 }

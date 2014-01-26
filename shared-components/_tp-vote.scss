@@ -1,6 +1,6 @@
 /** tweetpoll vote options **/
 .web-tweetpoll-vote-options {
-  margin-top: 10%;
+    margin-top: 10%;
 }
 
 .web-tweetpoll-vote-options .yellow {
@@ -19,6 +19,7 @@
       h1, h2 {
         color : green;
       }
+      background-color: #ADE195;
 }
 
 .web-tweetpoll-vote-options {
@@ -42,8 +43,7 @@
       }
 }
 
-.web-tweetpoll-vote-options .web-permatlink {
-  background-color: #ADE195;
+.web-tweetpoll-vote-options .web-permatlink {  
   border: 1px solid #E3E3E3;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 0 1px 6px rgba(72, 72, 72, 0.46);
