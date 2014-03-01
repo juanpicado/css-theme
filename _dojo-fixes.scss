@@ -9,3 +9,8 @@
 .dbootstrap .dijitDialogTitleBar {
   @extend .t-light;
 }
+
+
+.dj_webkit .dbootstrap .dijitInputContainer {
+  padding: 0px 4px;
+}

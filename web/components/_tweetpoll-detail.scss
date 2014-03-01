@@ -1,6 +1,8 @@
+
 .web-tweetpoll-detail, .web-poll-results {
     @extend .non-margin;
     @extend .main-shadow-box;
+    margin-top: 10px !important;
 }
 
 .web-tweetpoll-detail div.question {

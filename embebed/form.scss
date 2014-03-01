@@ -1,0 +1,39 @@
+@import "../_mixin";
+@import "../_common";
+@import "_widget";
+
+
+.poll-form {
+  padding: 5px;
+  width: 100%;
+
+  h3 {
+    @extend .title-enme;
+    margin: 0 5px;
+  }
+
+  form {
+
+      padding: 10px;
+
+      ul {
+
+        margin: 0px;
+
+        li {
+
+          list-style: none;
+          padding: 5px;
+
+          label {
+              font-size: 14px;
+              margin-left: 5px;
+          }
+
+          input {
+              float: left;
+          }
+        }
+      }
+  }
+}
