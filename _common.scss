@@ -14,7 +14,9 @@ img {
 }
 
 
-/**  override the dbootstrap dialog title **/
+/**
+  override the dbootstrap dialog title
+**/
 .dbootstrap .dijitDialogTitle {
   font-size: 20px;
 }
@@ -40,7 +42,7 @@ h4.enme, .title-enme {
   font-size: 18px;
   line-height: 25px;
   text-transform: capitalize;
-  margin: 0;
+  margin: 0px;
   @extend .t-light;
 }
 

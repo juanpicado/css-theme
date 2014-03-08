@@ -70,14 +70,25 @@
 	position: relative;
 	border-bottom: 1px solid $gray_lite;
 	overflow: auto;
-	margin-bottom: 5px;
+	//margin-bottom: 5px;
 	padding: 5px;
 	color : $black;
+
+    h5 {
+      margin: 0;
+      @extend .t-light;
+    }
 
 	.description, .link {
 		font-weight: 400;
 		color: $gray_normal;
+        font-size: $df_font_size;
 	}
+
+    .date {
+      font-size: 11px;
+      color: $gray_middle;
+    }
 
 	.buttons-group {
 		position: relative;
