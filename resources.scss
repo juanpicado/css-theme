@@ -1,5 +1,4 @@
 //@import "_base.scss";
-// required
 
 .enme-web-context {
     // background: url("../images/background.png") repeat center center fixed;
@@ -48,10 +47,25 @@ div.web-folder-wrapper .web-folder-item .icon-folder {
 .ui-image-wrapper {
   background-repeat: no-repeat;
   display: inline-block;
+  //@extend .col-left;
   float : left;
   height: 15px;
   padding-top: 3px;
 }
+/// poll admon used --->
+
+.ui-image-wrapper {
+  background-repeat: no-repeat;
+  display: inline-block;
+<<<<<<< HEAD
+float : left;
+=======
+  //@extend .col-left;
+>>>>>>> Fixed bad references
+height: 15px;
+  padding-top: 3px;
+}
+
 
 .ui-hits {
   background-image: url("../images/icons/enme_hits.gif");
