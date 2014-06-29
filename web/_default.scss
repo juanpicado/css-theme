@@ -345,6 +345,9 @@ div.web-default-menu  li.first {
 /** agrupa el grafico **/
 .web-wrapper-detail .web-wrapper-detail-wrapper .web-detail-chart {
     min-height: 180px;
+   .web-chart-wrapper-default .web-chart {
+     min-height: 300px;
+   }
 }
 
 .web-wrapper-detail .web-wrapper-detail-wrapper .web-detail-answer-wrapper {

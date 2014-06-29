@@ -13,6 +13,13 @@ img {
     border: 0;
 }
 
+.col-left  {
+  float : left;
+}
+
+.col-right  {
+  float : right;
+}
 
 /**
   override the dbootstrap dialog title
@@ -213,14 +220,6 @@ h4.enme, .title-enme {
 
 .white-space {
   white-space: nowrap;
-}
-
-.col-left  {
-  float : left;
-}
-
-.col-right  {
-  float : right;
 }
 
 .enme-unselectable {

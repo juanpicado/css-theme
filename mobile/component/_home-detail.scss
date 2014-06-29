@@ -9,5 +9,22 @@
               font-weight: normal !important;
         }
 	}
+
+    /**
+      height required to render correctly the canvas chart
+    **/
+    #chart {
+      .chart-tweetpoll-wrapper {
+         min-height: 200px;
+         text-align: center;
+      }
+    }
+
+    .web-chart-wrapper-default {
+      .web-chart {
+        min-height: 200px;
+        text-align: center;
+      }
+    }
 }
 

@@ -74,13 +74,8 @@
   overflow: auto;
 }
 
-.web-ht-graph-wrapper .web-ht-graph {
-  float: left;
-  height: 308px;
-  margin-left: 10px;
-  max-height: 308px;
-  overflow: hidden;
-  width: 650px;
+.web-ht-graph {
+  min-height: 384px;
 }
 
 .web-ht-graph-wrapper .web-ht-button-wrapper {

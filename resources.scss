@@ -1,4 +1,5 @@
 //@import "_base.scss";
+// required
 
 .enme-web-context {
     // background: url("../images/background.png") repeat center center fixed;
@@ -47,7 +48,7 @@ div.web-folder-wrapper .web-folder-item .icon-folder {
 .ui-image-wrapper {
   background-repeat: no-repeat;
   display: inline-block;
-  @extend .col-left;
+  float : left;
   height: 15px;
   padding-top: 3px;
 }
