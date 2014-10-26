@@ -177,6 +177,7 @@
     position: absolute;
     border: 1px solid $black;
     background-color: $white;
+    z-index: 99999;
 
     //TODO: remove
     .suggesItem{
@@ -300,9 +301,16 @@ div.web-default-menu  li.first {
 
 
 .emne-box {
-    > h1, > h2, > h3 {
-        border-bottom: 1px solid #E2DFDF;
-        font-weight: 200;
+    overflow: auto;
+    padding: 10px;
+    > h1, > h2, > h3, h4, h5 {
+        font-weight: 500;
+        color : darken($df_background_color, 70%);
+        text-transform: uppercase;
+    }
+
+    .non-items {
+      color: darken($df_background_color, 20%);
     }
 
     > h3 {
@@ -323,35 +331,6 @@ div.web-default-menu  li.first {
   font-size: 1.2em;
   @extend .non-margin;
   padding: 20px;
-}
-
-/** default detail **/
-.web-wrapper-detail {
-  @extend .border-main-box;
-}
-
-.web-wrapper-detail header h1 {
-  font-weight: bold;
-  margin: 10px 5px;
-}
-
-/** agrupa el grafico y preguntas **/
-.web-wrapper-detail .web-wrapper-detail-wrapper {
-    background-color: $white;
-    min-height: $_poll_detail_section_min_height;
-    //max-height : $_poll_detail_section_max_height;
-    @extend .o-hidden;
-}
-/** agrupa el grafico **/
-.web-wrapper-detail .web-wrapper-detail-wrapper .web-detail-chart {
-    min-height: 180px;
-   .web-chart-wrapper-default .web-chart {
-     min-height: 300px;
-   }
-}
-
-.web-wrapper-detail .web-wrapper-detail-wrapper .web-detail-answer-wrapper {
-  @extend .web-generic-detail-answer-wrapper;
 }
 
 /** dialog **/

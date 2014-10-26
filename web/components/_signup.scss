@@ -2,8 +2,8 @@
   sign up
  **/
 #web-user-actions-form-wrapper {
-    @extend .default-rd;
-    @include box-shadow(rgba(0, 0, 0, .1) 0 1px 0);
+    @include border-radius(0px 0px 4px 4px);
+    @include box-shadow(rgba(0, 0, 0, .1) 1px 3px 3px);
     @extend .centered-block;
     padding: 30px;
     @extend .z-level-1;
@@ -12,6 +12,14 @@
     border-right: solid 1px $float_background_border;
     border-bottom: solid 1px $float_background_border_darken;
     width: $float_size;
+
+    .right {
+      margin: 0 !important;
+    }
+
+    fieldset {
+      margin: 0;
+    }
 
     h5 {
       color: $black_medium ;
@@ -23,7 +31,7 @@
 
     input, textarea, select {
         @extend .width-max;
-        padding: 10px;
+        padding: 10px 2px;
     }     
 
     .leftMessage {
@@ -162,7 +170,7 @@
 #web-form-wrapper {
     width: 400px;
     padding: 1px;
-    h2 {
+    h2,h3 {
       font-weight: $float_h1_weight;
       color: #444;
       margin-bottom: 10px;

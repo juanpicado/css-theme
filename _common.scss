@@ -10,7 +10,7 @@ a.tag:link, a.tag:visited, a.tag:active {
 }
 
 img {
-    border: 0;
+    border: 0px;
 }
 
 .col-left  {
@@ -45,9 +45,8 @@ img {
 }
 
 h4.enme, .title-enme {
-  color : $gray_normal;
+  color : darken($df_background_color, 70%);
   font-size: 18px;
-  line-height: 25px;
   text-transform: capitalize;
   margin: 0px;
   @extend .t-light;
@@ -57,7 +56,7 @@ h4.enme, .title-enme {
 
     .vote {
         @include border-radius(50px);
-        background-color: $orange_light;
+        background-color: $orange;
         font-size: 10px;
         padding: 15px;
         width: 40px;
@@ -304,15 +303,7 @@ a.point {
     @include box-shadow(rgba(0,0,0,0.5) 0px 0px 2px);
 }
 
-.header_color {
-    background: rgb(76,76,76); /* Old browsers */
-    background: -moz-linear-gradient(top,  rgba(76,76,76,1) 0%, rgba(178,178,178,1) 0%, rgba(186,186,186,1) 26%, rgba(193,193,193,1) 52%, rgba(196,196,196,1) 66%, rgba(193,193,193,1) 76%, rgba(214,214,214,1) 91%, rgba(226,226,226,1) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(76,76,76,1)), color-stop(0%,rgba(178,178,178,1)), color-stop(26%,rgba(186,186,186,1)), color-stop(52%,rgba(193,193,193,1)), color-stop(66%,rgba(196,196,196,1)), color-stop(76%,rgba(193,193,193,1)), color-stop(91%,rgba(214,214,214,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(178,178,178,1) 0%,rgba(186,186,186,1) 26%,rgba(193,193,193,1) 52%,rgba(196,196,196,1) 66%,rgba(193,193,193,1) 76%,rgba(214,214,214,1) 91%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(178,178,178,1) 0%,rgba(186,186,186,1) 26%,rgba(193,193,193,1) 52%,rgba(196,196,196,1) 66%,rgba(193,193,193,1) 76%,rgba(214,214,214,1) 91%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  rgba(76,76,76,1) 0%,rgba(178,178,178,1) 0%,rgba(186,186,186,1) 26%,rgba(193,193,193,1) 52%,rgba(196,196,196,1) 66%,rgba(193,193,193,1) 76%,rgba(214,214,214,1) 91%,rgba(226,226,226,1) 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  rgba(76,76,76,1) 0%,rgba(178,178,178,1) 0%,rgba(186,186,186,1) 26%,rgba(193,193,193,1) 52%,rgba(196,196,196,1) 66%,rgba(193,193,193,1) 76%,rgba(214,214,214,1) 91%,rgba(226,226,226,1) 100%); /* W3C */
-}
+
 
 .panel-header {
     -webkit-transition: padding 0.15 linear;
@@ -344,7 +335,8 @@ a.point {
 }
 
 .home-header-color {
-    @include ctb-gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+  //@include ctb-gradient-vertical($navbarInverseBackgroundHighlight, $navbarInverseBackground);
+  background-color: #353535;
 }
 
 .category_color {
@@ -617,7 +609,6 @@ input:focus {
 
 /** agrupa preguntas **/
 .web-generic-detail-answer-wrapper {
-  background-color: #F7F7F7;
-  box-shadow: 3px 1px 3px 0 #CBCBCB inset;
+  @extend .text-back-image;
   min-height: 315px;
 }

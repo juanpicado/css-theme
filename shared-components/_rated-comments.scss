@@ -18,9 +18,9 @@
 }
 
 .web-rated-comments .web-rated-comment-item a {
-  color: white;
-  text-decoration : underline !important;
+  color: darken($df_background_color, 60%);
   font-weight: bold;
+  text-decoration: none !important;
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-picture {
@@ -29,7 +29,7 @@
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-detail {
-  color: $white;
+  color: $black_medium;
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-detail .strong {
@@ -43,14 +43,14 @@
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub a {
-    color: $white;
+  color: darken($df_background_color, 60%);
+    text-decoration: none !important;
 }
 
 .web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub section > span {
     display: inline-block;
 }
 
-.web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub .date
-    {
+.web-rated-comments .web-rated-comment-item .web-rated-comment-item-sub .date {
     font-weight: bold;
 }

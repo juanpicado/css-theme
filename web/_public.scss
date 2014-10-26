@@ -9,16 +9,17 @@ body.public-body {
   width: $layout_width;
 }
 
+#web-main-public-line {
+  @extend .text-back-image;
+}
 
-/** main public line **/
+  /** main public line **/
 
 @media only screen and (max-width : 980px) {
 
     #web-main-public-line {
         margin: 0 auto;
         position: relative;
-        //@extend .text-left;
-        //@extend .o-auto;
         overflow: auto;
         text-align: left;
 
@@ -452,38 +453,4 @@ li.over {
     position: absolute;
     bottom: 0;
     right: 0;
-}
-
-
-/** generic results **/
-.web-generic-result .votes {
-  @extend .col-left;
-  margin: 0 !important;
-  padding: 8px;
-  width: 50px !important;
-  // previously 100, why?
-  // width: 100px !important;
-}
-
-.web-generic-result .percent {
-  float: left;
-  font-weight: bold;
-  padding: 8px;
-}
-
-.web-generic-stats {
-   // margin-top: 35px;
-}
-
-.web-generic-stats h2 {
-   float: left;
-   width: 90%;
-}
-
-.web-generic-stats .badge {
-   margin: 22px 13px;
-}
-
-.web-generic-stats .enme-dropdown-menu-wrapper {
-  margin: 22px 13px;
 }

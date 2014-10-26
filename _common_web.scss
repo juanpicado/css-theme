@@ -4,6 +4,7 @@
 @import "input";
 @import "dojo-fixes";
 @import "layout";
+
 @import "web/suggest";
 @import "web/menu";
 @import "web/public";
@@ -19,6 +20,15 @@
 @import "small-components/panel_header";
 @import "small-components/offline-theme-slide";
 @import "small-components/notification_ios";
+
+
+.enme-web-context {
+  padding-top: 25px;
+  .navbar-inner {
+    @include border-radius(4px 4px 0px 0px);
+    border-bottom: 0;
+  }
+}
 
 
 .web-items-no-results {

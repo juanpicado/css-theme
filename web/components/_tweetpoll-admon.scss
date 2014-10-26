@@ -38,6 +38,7 @@ div.web-tweetpoll-wrapper div.tweetListContent div.web-tweetpoll-options {
 }
 
 div.tweetListContent div.web-tweetpoll-options div.web-tweetpoll-sidebar-panel {
+    @include user-select(none);
     @extend .o-auto;
 }
 
