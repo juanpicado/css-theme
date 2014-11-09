@@ -8,13 +8,13 @@
 
     .web-rated-profile-picture {
         float: left;
-        margin: 5px 10px 0 10px;
-        min-height: 48px;
-        min-width: 48px;
+        margin: 0 5px;
+        min-height: 32px;
+        min-width: 32px;
 
         img {
-            height: 48px;
-            width: 48px;
+            height: 32px;
+            width: 32px;
         }
     }
 
@@ -26,13 +26,15 @@
           text-decoration: none;
         }
         p {
-            color: $white;
+          color: darken($df_background_color, 30%);
         }
-        h4.enme {
-            color: $gray_lite;
+        h5 {
+            color: darken($df_background_color, 60%);
+            margin: 0;
         }
-        .label-info, .badge-info {
-            padding: 0 4px;
+        .total-items {
+          color: darken($df_background_color, 40%);
+          font-weight: bold;
         }
     }
 }

@@ -26,6 +26,8 @@
 		overflow: auto;
 		position: relative;
 		height: 20px;
+        line-height: 20px;
+        text-transform: capitalize;
 
 		> span {
 			margin: 5px;
@@ -137,7 +139,7 @@
 	text-align: center;
 
 	.graph-wrapper {
-		min-height: 380px;
+		min-height: 220px;
 	}
 
 	.tools {

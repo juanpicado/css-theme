@@ -171,34 +171,12 @@
   }
 }
 
-/** Suggest. **/
-
-.suggestBox{
-    position: absolute;
-    border: 1px solid $black;
-    background-color: $white;
-    z-index: 99999;
-
-    //TODO: remove
-    .suggesItem{
-        padding: 5px;
-        font-size: 12px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    //TODO: remove
-    .suggesItem:hover{
-        background-color: #939397;
-        @extend .text-white;
-    }
-}
-
-div.yesNoWrapper{
+.yesNoWrapper{
     padding: 1px;
     @extend .pointer;
 }
 
-div.yesNoWrapper div.label {
+.yesNoWrapper div.label {
    color: #BC870D;
 }
 
