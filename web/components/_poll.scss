@@ -4,8 +4,20 @@
     @extend .right;
 }
 
+.web-poll-vote {
+  h4 {
+    font-weight: normal;
+  }
+}
+
 .web-vote-wrapper {
+    header {
+      text-align: center;
+      img {
+        width: 70%;
+      }
+    }
 	margin: 0 auto !important;
-	width: 65%;
+	width: 75%;
 	margin-top: 50px !important;
 }

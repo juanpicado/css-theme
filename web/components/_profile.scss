@@ -22,28 +22,25 @@
           }
       }
 
-      .enme-box {
-
-        position: relative;
-
-        .rss-right {
-            position: absolute;
-            right: 5px;
-            top: 10px;
+      .emne-box {
+        > header {
+          position: relative;
+            .rss-right {
+              position: absolute;
+              right: 5px;
+              top: 10px;
+            }
         }
-
       }
 
       .rss {
         margin: 0;
         padding: 0;
-        @extend .text-back-image;
-        box-shadow: 0px 0px 5px 4px #000 inset;
       }
 
       li {
           list-style: none;
-          padding: 10px 20px;
+          padding: 5px;
           a {
               color : $white;
               text-decoration: none;

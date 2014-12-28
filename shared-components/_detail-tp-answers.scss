@@ -72,32 +72,6 @@
   @extend .non-margin;
 }
 
-.web-tweetpoll-detail .web-tweetpoll-info .votes-tweetpoll-detail {
-  @extend .text-white;
-  @extend .col-left;
-  min-height: 48px;
-  min-width: 45px;
-  padding: 3px;
-  @extend .center;
-  width: 75px;
-}
-
-.web-tweetpoll-detail .web-tweetpoll-info .votes-tweetpoll-detail .votes-detail-high {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 4px;
-}
-
-.web-tweetpoll-detail .web-tweetpoll-info .votes-tweetpoll-detail .votes-detail-small-title {
-  color: #BABABA;
-  font-size: 10px;
-}
-
-.web-tweetpoll-detail .web-tweetpoll-info .votes-tweetpoll-detail .hits-detail-small {
-  font-size: 13px;
-  line-height: 15px;
-}
-
 .web-tweetpoll-detail .web-tweetpoll-answer-wrapper {
   @extend .o-hidden;
 }

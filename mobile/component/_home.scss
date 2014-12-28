@@ -224,43 +224,23 @@
         min-height: none;
     }
 
-    .vote-page {        
-        .container {
-            width: 100%;
-           .web-tweetpoll-vote-options {
-                margin: 20px; 
-                margin-top: 25px;                
-                .web-permatlink {
-                    .recaptcha {
-                        margin-left: 0px;
-                    }
-                    h2 {
-                        font-size: 14px;
-                    }
-                    h3 {
-                        font-size: 22px;   
-                    }
-                }
-                .span10 {
-                    width: 95%;
-                    margin: 0;
-                    padding: 10px;
-                }
-                // .web-tweetpoll-vote-options {
-                //     h3 {
-                //         font-size: 16px;
-                //     }
-                // }
-                .web-tweetpoll-info{
-                    margin-top: 20px;
-                }   
-            }
-        }
-    }
 
     // poll 
+  .web-poll-vote {
+    h4 {
+      font-weight: normal;
+    }
+  }
 
-    .web-vote-wrapper {
+  .web-vote-wrapper {
+        header {
+          text-align: center;
+          border-bottom: 1px solid $gray_normal;
+          img {
+             width: 65%;
+          }
+        }
+
         padding: 10px;
         h3 {
             @extend .t-light;

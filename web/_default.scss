@@ -278,10 +278,9 @@ div.web-default-menu  li.first {
 }
 
 
-.emne-box {
+.emne-box, enme-box {
     overflow: auto;
-    padding: 10px;
-    > h1, > h2, > h3, h4, h5 {
+      h4, h5, h6 {
         font-weight: 500;
         color : darken($df_background_color, 70%);
         text-transform: uppercase;
