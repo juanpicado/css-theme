@@ -1,18 +1,5 @@
 .mobil {    
 
-
-    //rates 
-
-//    .web-rated-comment-item-detail {
-//        .p {
-//
-//            //@extend .txt-df;
-//        }
-//    }
-
-
-    //not avaiiable zone
-
     .not-available-message{
         padding: 20px;
         font-size: $df_font_size;        
@@ -23,6 +10,8 @@
 
     // home menu
     .category-menu {
+        background-color: #808080;
+        padding: 0;
 
         a {
             color : $white;
@@ -30,9 +19,6 @@
 
         .nav-home-menu{
 
-            overflow: auto;
-            position: relative;
-            width: 100%;            
 
             ul {
                 margin: 0px;
@@ -42,7 +28,6 @@
                     padding: 10px;
                     float: left;
                     list-style: none;
-                    margin-right: 10px;
                 }
            
             }
@@ -102,8 +87,9 @@
             }
             .bottom {
                 clear: both;
-                margin-left: 80px;
+                margin-left: 65px;
                 font-size: 11px;
+                padding: 5px 10px;
 
                 a {
                     font-weight: bold;
@@ -224,54 +210,64 @@
         min-height: none;
     }
 
-
-    // poll 
-  .web-poll-vote {
-    h4 {
-      font-weight: normal;
-    }
-  }
-
-  .web-vote-wrapper {
-        header {
-          text-align: center;
-          border-bottom: 1px solid $gray_normal;
-          img {
-             width: 65%;
-          }
-        }
-
-        padding: 10px;
-        h3 {
-            @extend .t-light;
-        }
-        .web-poll-vote {
-
-        }
-        .poll-vote-container, .web-response-single-response {
-            margin: 0;
-        }
-        .web-response-single-response {
-            .span5 {
-                width: 80%;
-                h4 {
-                    width: 100%;
-                }
-            }
-        }
+    .mobile-home-subtitle {
+        background-color: #DCDCDC;
     }
 
-    // error
+    .web-tweetpoll-vote-options {
+      margin: 0;
+    }
 
-    .web-message-center {
-        padding: 10px;
-        h4 {
-            @extend .t-light;
-        }
-        p {
-            font-size: 10px;
+    // vote layout wrapper
+    .vote-page {
+      margin: 0px;
+    }
+
+    // poll
+    .web-poll-vote {
+      h4 {
+        font-weight: normal;
+      }
+    }
+
+    .web-vote-wrapper {
+          header {
             text-align: center;
-        }
-    }
+            border-bottom: 1px solid $gray_normal;
+            img {
+               width: 65%;
+            }
+          }
 
+          padding: 10px;
+          h3 {
+              @extend .t-light;
+          }
+          .web-poll-vote {
+
+          }
+          .poll-vote-container, .web-response-single-response {
+              margin: 0;
+          }
+          .web-response-single-response {
+              .span5 {
+                  width: 80%;
+                  h4 {
+                      width: 100%;
+                  }
+              }
+          }
+      }
+
+      // error
+      .web-message-center {
+          padding: 10px;
+          h4 {
+              @extend .t-light;
+          }
+          p {
+              font-size: 10px;
+              text-align: center;
+          }
+      }
 }

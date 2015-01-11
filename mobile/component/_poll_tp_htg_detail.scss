@@ -2,12 +2,20 @@
 
 	.web-tweetpoll-answer-wrapper {
 		.web-tweetpoll-answer-answer {
-			min-height: 150px;
+			min-height: 135px;
 			@include tablet-only {
 		        min-height: 160px;
-		    }	
+		    }
+          .answer {
+
+          }
 		}
-	} 
+	}
+
+    .web-buttdon-wrapper {
+      text-align: right;
+      padding: 10px;
+    }
 
 	//commons
 
@@ -43,8 +51,6 @@
 		// this part affect only a tweetpoll
 		>header {
 
-			background-color: $gray_ultra_light;
-
 			>div {
 				padding: 8px 0;
 				box-shadow: none;
@@ -56,29 +62,36 @@
 			}
 		}
 
-		> div, div.answer { //answer
-			padding: 10px 0px !important;
+
+		.answer {
+		    // answer
+            > div {
+              float: left;
+            }
+			padding: 10px 0;
+            width: 100%;
 			margin: 0px;
+            display: inline-block;
 			.answer-votes {
-		        width: 30%;
-		        @include tablet-only {
-		             width: 30%;
-		        }		        
+                width: 15%;
+                margin-right: 20%;
 		    }
 		    .answer-percent{
-		       	width: 30%;	
-		       	@include tablet-only {
-		             width: 30%;
-		        }		        
-		    }			
+                width: 15%;
+		    }
 			.answer-color {
-				width: 40%;
-				@include tablet-only {
-		             width: 35%;
-		        }		        
+               width: 40%;
+               padding-left: 2%;
 				.color-code {
-					margin-right: 5px;
-					margin-left: 10px; 
+                  @include border-radius(10px);
+                  display: inline-block;
+                  height: 20px;
+                  margin-right: 10px;
+                  @extend .opacity-lite;
+                  width: 20px;
+                  @extend .col-left;
+					//margin-right: 5px;
+					//margin-left: 10px;
 				}
 				span {
 					float: left;
@@ -86,8 +99,6 @@
 			}			
 
 			> div {
-				padding: 8px 0 !important;
-				// width: 33%;
 				margin: 0px;
 				text-align: center;
 			}
