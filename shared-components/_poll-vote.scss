@@ -1,3 +1,5 @@
+// bootstrap additional css for forms
+
 label {
    display: block;
    margin-bottom: 5px;
@@ -96,6 +98,14 @@ input[type="color"]:focus,
 .web-poll-vote {
   h4 {
     font-weight: normal;
+  }
+  .answer-selected {
+    padding: 30px;
+    color: $gray_normal;
+    line-height: 25px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
   }
 }
 
