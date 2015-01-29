@@ -66,6 +66,7 @@ div.web-list-tweet div.web-tweetpoll-list-item div.web-tweetpoll-favourite {
 
 .web-list-tweet div.web-tweetpoll-list-item .web-tweetpoll-list-panel {
     @include box-shadow(gray 0 7px 5px -6px);
+    position: relative;
 }
 
 

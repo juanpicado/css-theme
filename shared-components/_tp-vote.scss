@@ -1,53 +1,8 @@
 /** tweetpoll vote options **/
-.web-tweetpoll-vote-options {
-    margin-top: 10%;
+@import "../vote_layout";
+@import "poll-vote";
+
+.web-poll-vote {
+  padding: 40px;
 }
 
-.web-tweetpoll-vote-options .yellow {
-      h1, h2{
-        color : #FAA000;
-      }
-}
-
-.web-tweetpoll-vote-options .red {
-      h1, h2{
-        color : $black;
-      }
-}
-
-.web-tweetpoll-vote-options .green {
-      h1, h2 {
-        color : green;
-      }
-      background-color: #ADE195;
-}
-
-.web-tweetpoll-vote-options {
-      h1, h2, h3 {
-        color : $black_medium;
-        font-weight: 100;
-      }
-
-      h1,h2 {
-          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
-          color: #565656;
-      }
-
-      h4, h5 {
-        font-weight: 100;
-        color: $white;
-         b {
-              color: #565656;
-              text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 rgba(255, 255, 255, 0.4);
-          }
-      }
-}
-
-//.web-tweetpoll-vote-options .web-permatlink .captcha {
-//    margin: 2px;
-//}
-//
-//.web-tweetpoll-vote-options .web-permatlink .captcha .recaptcha {
-//    margin-bottom: 10px;
-//    margin-left: 10px;
-//}

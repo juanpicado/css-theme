@@ -4,6 +4,12 @@
   @extend .default-rd;
 }
 
+.tp-shared-link {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+}
+
 /** List TweetPoll **/
 #web-tweetpoll-wrapper div.web-tweetpoll-menu {
   @extend .padding;
@@ -116,6 +122,7 @@ div.web-tweetpoll-wrapper div.tweetListContent div.web-list-tweet div.web-tweetp
     border-bottom: 1px solid $gray_lite;
     background-color: $white;
     width: 101%;
+    position: relative;
 }
 
 div.web-tweetpoll-wrapper div.tweetListContent div.web-list-tweet div.web-tweetpoll-list-item .hashTags{
