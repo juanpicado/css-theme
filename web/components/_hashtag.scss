@@ -1,22 +1,115 @@
 /** HASHTAGS */
 .web-hashtag-wrapper {
 
-      margin-top: 10px;
+     position: relative;
 
-      aside > article {
-        padding: 10px;
+    .web-generic-stats {
+      overflow: auto;
+      border-bottom: 1px solid #C8C5C5;
+      background-color: #E7E7E7;
+
+
+      .generic-stats {
+          float: left;
+          width: 600px;
+
+        .counter {
+            float: left;
+            width: 90px;
+            min-height: 80px;
+            padding: 5px;
+            border-right: 1px solid #888;
+            background-color: #BEBEBE;
+            .enme-rating {
+
+              position: relative;
+
+              .vote {
+                position: absolute;
+                top: 0.7em;
+                left: 2em;
+              }
+
+              .count-sub {
+                color: #000;
+                position: absolute;
+                top: 5.5em;
+                left: 2em;
+                font-size: 10px;
+                text-align: center;
+                padding: 5px;
+              }
+            }
+          }
+          .title {
+            float: left;
+            width: 300px;
+            padding: 10px;
+            h3 {
+              font-weight: 400;
+            }
+          }
+      }
+      .timerange {
+          position: absolute;
+          top: 30px;
+          right: 5px;
+      }
+    }
+
+    .web-ht-button-wrapper .selected {
+      background: white !important;
+      color: $black_medium;
+      @include box-shadow(#888 0 7px 5px -6px inset);
+    }
+
+    .graph-container {
+         overflow: auto;
+        .graph-wrapper {
+          float: left;
+          .web-ht-graph {
+             min-height: 404px;
+          }
+          width: 742px;
+          .web-ht-graph-wrapper {
+            border-radius: 5px 0 0 5px;
+          }
+        }
+        .buttons {
+          float: left;
+
+          .stats-button {
+            @extend .pointer;
+            min-height: 80px;
+            @extend .o-auto;
+            padding: 10px 30px 10px 40px;
+            @extend .home-main-colors;
+            width: 125px;
+          }
+
+          .stats-button .web-graph-sts-btt-tlt {
+            font-weight: bold;
+          }
+
+          .stats-button .web-graph-sts-btt-val {
+            font-size: 26px;
+            font-weight: bold;
+            padding-right: 5px;
+            text-align: center;
+          }
+
+          .stats-button .web-graph-sts-btt-sub {
+            font-size: 13px;
+            padding-left: 40%;
+          }
+
+          .stats-button:hover {
+            background-color: #fff;
+            color: $black_medium;
+          }
+        }
       }
 
-
-      img {
-          @include border-radius(40px);
-          height: 50px;
-          width: 50px;
-      }
-
-      aside > article > h3{
-        margin: 0;
-      }
 
        .web-ht-detail {
         @extend .o-auto;
@@ -40,7 +133,6 @@
         border: 0 none !important;
         @include non_borders();
         overflow: hidden;
-        margin-top: 2em;
 
         .web-rated-profile-item-detail h4.enme {
           color: $black_medium;
@@ -51,8 +143,18 @@
           float: left;
           width: 650px;
           max-width: 655px;
-      }
+        }
+  .web-ht-detail {
+    padding: 10px;
+    overflow: auto;
+    .web-dht-detail-wrapper {
+      float: left;
+      width: 735px;
+    }
+    .ht-second-aside {
 
+    }
+  }
 }
 
 .web-hashtag-header .web-hashtagName {
@@ -67,16 +169,6 @@
   width: 500px;
 }
 
-
-
-.web-ht-graph-wrapper {
-  border-radius: 5px 0 0 5px;
-  overflow: auto;
-}
-
-.web-ht-graph {
-  min-height: 384px;
-}
 
 .web-ht-graph-wrapper .web-ht-button-wrapper {
     float: right;

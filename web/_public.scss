@@ -285,41 +285,7 @@ div.socialAccountPicker div.account div.icon {
 }
 
 
-.stats-button {
-    @extend .pointer;
-    min-height: 80px;
-    @extend .o-auto;
-    padding: 10px 30px 10px 40px;
-    @extend .home-main-colors;
-}
 
-.stats-button .web-graph-sts-btt-tlt {
-  font-weight: bold;
-}
-
-.stats-button .web-graph-sts-btt-val {
-  font-size: 26px;
-  font-weight: bold;
-  padding-right: 5px;
-  text-align: center;
-}
-
-.stats-button .web-graph-sts-btt-sub {
-    font-size: 13px;
-    padding-left: 40%;
-}
-
-.web-ht-button-wrapper .selected {
-    background: white !important;
-    color: $black_medium;
-    @include box-shadow(#888 0 7px 5px -6px inset);
-
-}
-
-.stats-button:hover {
-    background-color: #fff;
-    color: $black_medium;
-}
 /** tweetpoll tags **/
 .web-tags-tweetpolls {
     margin-top: 4px;

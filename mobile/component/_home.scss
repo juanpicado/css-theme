@@ -7,7 +7,6 @@
         min-height: 200px;
     }
 
-
     // home menu
     .category-menu {
         background-color: #808080;
@@ -18,7 +17,6 @@
         }
 
         .nav-home-menu{
-
 
             ul {
                 margin: 0px;
@@ -48,7 +46,7 @@
     .items, .mobile-main {
         .item {
             overflow: auto;
-            margin: 25px 0;
+            margin: 15px 0;
             @include tablet-only {
                 margin: 10px 0;
             }
@@ -57,12 +55,14 @@
                 margin: 0 15px;
             }            
             .content {
-
+              padding: 0;
+              margin: 0;
+              margin-left: 90px;
                 a {
                     color: $black_medium;
                 }
 
-                padding: 0;                
+
                 @media screen and (orientation: landscape) {
                     width: 60%;
                 }             
@@ -73,8 +73,7 @@
                     width: 70%;
                 }   
                 
-                margin: 0;
-                float: left;
+
                 
                 .title {
                     h4 {
@@ -87,9 +86,8 @@
             }
             .bottom {
                 clear: both;
-                margin-left: 65px;
                 font-size: 11px;
-                padding: 5px 10px;
+                padding: 5px 0 0 0px;
 
                 a {
                     font-weight: bold;
