@@ -28,6 +28,23 @@ img {
   font-size: 20px;
 }
 
+//.label {
+//  cursor: pointer;
+//  display: table;
+//  line-height: 1.2em;
+//  @include word-break(break-word);
+//  @include nowrap();
+//  font-size: 13px;
+//  font-weight: 500;
+//  color: $white;
+//  background-color: #D2D2D2;
+//  margin-right: 4px;
+//  @include border-radius(12px);
+//  padding: 4px 8px;
+//  border: 0;
+//  text-shadow: none;
+//}
+
 .center {
  text-align: center;
 }
@@ -44,29 +61,15 @@ img {
   @extend .wrap;
 }
 
-h4.enme, .title-enme {
-  color : darken($df_background_color, 70%);
-  font-size: 18px;
+.title-enme {
+  font-size: 19px;
+  color: #333;
   text-transform: capitalize;
   margin: 0px;
-  @extend .t-light;
-}
-
-.enme-rating {
-
-    .vote {
-        @include border-radius(45px);
-        //background-color: $orange;
-        font-size: 12px;
-        padding: 5px;
-        width: 30px;
-        text-align: center;
-        color: $white;
-    }
-
-    .count {
-       font-size: 25px;
-    }
+  letter-spacing: -0.5px;
+  line-height: 1.25;
+  font-weight: bold;
+  -webkit-tap-highlight-color: rgba(255,255,255,0.5);
 }
 
 .text-right, .right {
@@ -243,16 +246,24 @@ h4.enme, .title-enme {
     height: 0;
 }
 
+.left {
+  float: left;
+}
+
 
 .col {
   margin-bottom: -99999em;
   padding-bottom: 99999em;
-  float: left;
+  @extend .left;
   min-height: 572px;
 }
 
-a.point {
+.pointer {
   cursor: pointer;
+}
+
+a.point {
+  @extend .pointer;
   text-decoration: none;
 }
 
@@ -430,7 +441,9 @@ a.point {
 }
 
 .t-light {
-    font-weight: 100;
+  line-height: 1.25;
+  font-weight: bold;
+  letter-spacing: -0.25px;
 }
 
 /** disable focus on webkit **/
@@ -563,7 +576,7 @@ input:focus {
 }
 
 .picture {
-    float: left;
+    @extend .left;
     img {
       border: 1px solid $green_light;
       @include border-radius(140px);

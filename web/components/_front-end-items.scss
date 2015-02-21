@@ -1,80 +1,71 @@
-.web-item-wrapper .items {
+.web-item-wrapper {
+  background-color: $white;
+  .items {
+    margin-left: 45px;
+    min-height: 1px;
     .item {
-      background: none repeat scroll 0 0 #FFFFFF;
-      border-bottom: 1px dotted #EEEBEB;
-      clear: both;
-      overflow: auto;
-      padding: 10px 15px;
+      border-bottom: 1px solid #E2E2E2;
+      padding: 0 0 16px 0;
+      margin-bottom: 16px;
+      .tags {
+        overflow: auto;
+        margin-top: 20px;
+        .enme-hashtag {
+          @extend .left;
+          display: inline-block;
+          margin-right: 5px;
+          a :hover {
+            color: #FFF;
+          }
+        }
+      }
+      > header {
+        overflow: auto;
+      }
+
+      .vote-item {
+        font-size: 12px;
+        padding: 10px 0 0px;
+        bottom: 0;
+        clear: left;
+        overflow: auto;
+
+        .item-vote-block {
+          padding: 0 5px 0 0px;
+        }
+      }
+      .content {
+        .bottom {
+          .share {
+            float: right;
+          }
+          .options {
+            clear: both;
+            color: $gray_middle;
+            font-size: 12px;
+            //margin: 2px 2px 2px 0;
+            white-space: nowrap;
+          }
+          .submited {
+            line-height: 20px;
+          }
+        }
+        .title h2 {
+          font-size: 19px;
+          color: #333;
+          letter-spacing: -0.5px;
+          line-height: 1.25;
+          font-weight: bold;
+          margin: 10px 0 0;
+        }
+        h3 a {
+          color: #5C8397;
+        }
+        .title a:hover {
+          color: #275296;
+          text-decoration: none;
+        }
+      }
     }
-}
-
-.web-item-wrapper .item .img {
-    float: right;
-}
-
-.web-item-wrapper .item .content {
-    float: left;
-    width: 535px;
-}
-
-.web-item-wrapper .item .clear {
-    clear: both;
-    float: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.web-item-wrapper .item .content .title h4 {
-  @extend .t-light;
-}
-
-// .web-item-wrapper .item .content .title a {
-//     color: #000;
-// }
-
-.web-item-wrapper .item .content .title a:hover {
-    color: #275296;
-    text-decoration: none;
-}
-
-.web-item-wrapper .item .content h3 a {
-    color: #5C8397;
-}
-
-.web-item-wrapper .item .content .bottom {
-    float: left;
-    width: 500px;
-}
-
-.web-item-wrapper .item .content .bottom .share {
-    float: right;
-}
-
-.web-item-wrapper .item .content .bottom .options {
-    clear: both;
-    color: #3E6D8E;
-    font-size: 10px;
-    margin: 2px 2px 2px 0;
-    white-space: nowrap;
-}
-
-.web-item-wrapper .item .content .bottom .submited {
-  color: #C4C4C4;
-  margin-bottom: 10px;
-  margin-top: 5px;
-}
-.web-pup-item-row a,
-.web-pup-item-row a:link,
-.web-pup-item-row a:visited,
-.web-item-wrapper .item .content .bottom .submited a,
-.web-item-wrapper .item .content .bottom .submited a:visited,
-.web-item-wrapper .item .content .bottom .submited a:link {
-  color: darken($df_background_color, 60%);
-  text-decoration: none;
-}
-
-.web-item-wrapper .item .tags {}
-
-.web-item-wrapper .item .tags a:hover {
-    color: #FFF;
+  }
 }

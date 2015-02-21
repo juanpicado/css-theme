@@ -65,13 +65,10 @@
     }
 
     .enme {
+      @extend .title-enme;
       color: $black_hight;
       text-transform: capitalize;
-      margin: 0;    
-      font-weight: 100;
-      @include tablet-only {
-            font-weight: 500;
-      }
+
     }       
 
      > footer  .mobile-footer {

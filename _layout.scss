@@ -1,12 +1,11 @@
 html,body {
     height: 100%;
     font-family: "museo-sans", "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
-}
-
-.main_header_colors {
-  background: $black;
-  @include background-image(linear-gradient(color-stops($black  42%, $black_hight 100%)));
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background: #F6F6F6;
+    word-wrap: break-word;
 }
 
 /* Smartphones (portrait and landscape)  */
@@ -83,7 +82,7 @@ div.web-header-options {
 div.web-header div.logo {
   background: none repeat scroll 0 0 transparent;
   width: 128px;
-  float: left;
+  @extend .left;
 }
 
 div.web-header .logo > a {

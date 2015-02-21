@@ -24,6 +24,8 @@
 @import "small-components/offline-theme-slide";
 @import "small-components/notification_ios";
 
+@import "alertify/alertify.core";
+@import "alertify/alertify.default";
 
 .enme-web-context {
   padding-top: 25px;

@@ -36,7 +36,7 @@
     }
   }
   .bqstart {
-    float: left;
+    @extend .left;
     font-size: 300%;
     color: #66757F;
   }

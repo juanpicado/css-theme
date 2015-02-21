@@ -13,6 +13,8 @@
 @import "mobile/hacks/webkit";
 @import "mobile/hacks/ie";
 
+@import "alertify/alertify.core";
+@import "alertify/alertify.default";
 
 .category_color{
   text-transform: uppercase;
