@@ -6,7 +6,6 @@
 .profilePanel {
     display: none;
     position: absolute;
-    min-height: 120px;
     min-width: 202px;
     background:  #222;
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #444), color-stop(100%, #222) );
@@ -16,7 +15,7 @@
     background: linear-gradient(#444, #222);
     right: 0px;
     left: 0px;
-    top: 43px;
+    top: 50px;
     zoom: 1;
     @include box-shadow(#888888 1px 2px 3px);
     @include border-radius(0px 0px 5px 5px);
