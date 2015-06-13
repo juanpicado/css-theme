@@ -1,7 +1,6 @@
 //  // required
 @import "common_mobile";
 
-
 // mobile implementation
 @import "mobile/default";
 @import "mobile/component/home";
@@ -10,11 +9,13 @@
 @import "mobile/component/profile-public";
 
 @import "mobile/component/search";
+
 @import "mobile/component/vote-poll";
 @import "mobile/component/tp-vote";
 
 @import "mobile/component/home-detail";
 @import "mobile/component/hashtag-home";
+
 // shared components
 
 @import "shared-components/social-links";
